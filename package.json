@@ -17,6 +17,7 @@
     "electron": "^1.6.11"
   },
   "dependencies": {
+    "firebase": "^3.6.4",
     "photon": "github:connors/photon",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

@@ -16,7 +16,7 @@ function setAppMenu() {
     // テンプレートの定義
     var template = [{
         label: "File",
-        submenu: [{ label: "New Window", accelerator: "CmdOrCtrl+N", click: "createWindow" }, { type: "separator" }, { label: "Close", accelerator: "CmdOrCtrl+W", role: "close" }]
+        submenu: [{ label: "New Window", accelerator: "CmdOrCtrl+N", click: _createWindow2.default }, { type: "separator" }, { label: "Close", accelerator: "CmdOrCtrl+W", role: "close" }]
     }, {
         label: "Edit",
         submenu: [{ label: "Copy", accelerator: "CmdOrCtrl+C", role: "copy" }, { label: "Past", accelerator: "CmdOrCtrl+V", role: "past" }, { label: "Cut", accelerator: "CmdOrCtrl+V", role: "cut" }, { label: "Select All", accelerator: "CmdOrCtrl+A", role: "selectall" }]

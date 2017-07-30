@@ -24,6 +24,10 @@ var _Room = require("./Room");
 
 var _Room2 = _interopRequireDefault(_Room);
 
+var _firebaseBrowser = require("firebase/firebase-browser");
+
+var _firebaseBrowser2 = _interopRequireDefault(_firebaseBrowser);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Routingの定義
@@ -47,6 +51,15 @@ var appRouting = _react2.default.createElement(
 if (!location.hash.length) {
     location.hash = "#/login";
 }
+
+// firebaseの初期化
+var config = {
+    apiKey: "AIzaSyCalUp17rYhdwX2l66b5IuoQ-OCpOWnJ-0",
+    authDomain: "electron-chat-be06b.firebaseapp.com",
+    databaseURL: "https://electron-chat-be06b.firebaseio.com",
+    storageBucket: "electron-chat-be06b.appspot.com"
+};
+_firebaseBrowser2.default.initializeApp(config);
 
 // Applicationの描画
 (0, _reactDom.render)(appRouting, document.getElementById("app"));
